@@ -300,13 +300,31 @@ Then, it was a matter of fine tuning the styling, before calling it a day.
 </p>
 
         <pre>
-<code>
-int main() 
-{ 
-    for (int i = 0; i < 3; i++) { 
-        std::cout << "Hello world" << std::endl; 
-    } 
-}
+<code style="font-size: 12px;">
+$("button").click(function () {
+  $.get("https://official-joke-api.appspot.com/random_joke", function (data, status) {
+      // jokeSetup.innerHTML = data.setup
+      // jokePunchline.innerHTML = "> " + data.punchline
+      let jokeButton = document.getElementById("jokeBtn")
+      jokeDiv.style.padding = "20px";
+      jokeDiv.style.paddingLeft = "40px";
+      jokeDiv.scrollIntoView();
+      //aText = new Array(data.setup, data.punchline)
+      //typewriter()
+      console.log("hello world")
+      aText = new Array(data.setup, "> " + data.punchline)
+      iSpeed = 100; // time delay of print out
+      iIndex = 0; // start printing array at this posision
+      iArrLength = aText[0].length; // the length of the text array
+      iScrollAt = 20; // start scrolling up at this many lines
+
+      iTextPos = 0; // initialise text position
+      sContents = ''; // initialise contents variable
+      iRow; // initialise current row 
+      typewriter()
+
+  });
+});
   </code>
 </pre>
         <h3>Jessica</h3>
