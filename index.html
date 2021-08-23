@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Team 1</title>
+    <link rel="stylesheet" href="stylesheets/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Space+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/svg+xml" href="./images/favicon.svg" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+    ></script>
+  </head>
+  <body>
+
+        <h1 style="margin-top: 20px">
+        
+            👨‍⚕️‍ Doctor All Nighters 
+            👩‍⚕️
+        </h1>
+      
+
+    <section id="Day1" ">
+      <div class="hero">
+        <div class="hero_left">
+          <h2><u>Our Team</u></h2>
+          <p class="sidetext">
+            Hello! We are the three doctors that just so happened to be operating a heart surgery
+            all night before being transported back in time to 1910. We decided to apply for the 
+            Fruehauf Trailer Corporation to develop a dumpster truck, because we need money and food to 
+            feed ourselves. And there was good food there that reminded us of UCLA. Luckily, we went through 
+            BasicTraining and The Hack before we got here.....so it should be doable Right?
+          </p>
+        </div>
+        <div class="hero_right">
+          <div class="heroImg">
+            <img src="images/groupFoto.jpeg" style="width: 95%" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="Day2">
+      <div class="content">
+        <h2>Day 1</h2>
+        <h3>Brian</h3>
+        <p>
+          Day one started by modeling parts in Solidworks. The hackathon materials included Solidworks files for all major components, except three. These were: the wheels, the ball caster, and a small L Bracket. 
+<br><br>
+          By far the most challenging part to model was the wheel. It consists of a hard plastic rim and a rubber tire that fits over the rim. I tried my best to accurately measure each feature, but the wheel was too complex. I decided to focus on the key features that would matter most when interfacing with the rest of the robot. 
+          
+
+        </p>
+        <figure>
+          <img src="images/wheel.jpeg" class="images" />
+          <figcaption>
+            <i>fig. 1</i>: Wheel Model
+          </figcaption>
+        </figure>
+        <p>
+          By far the most challenging part to model was the wheel. It consists of a hard plastic rim and a rubber tire that fits over the rim. I tried my best to accurately measure each feature, but the wheel was too complex. I decided to focus on the key features that would matter most when interfacing with the rest of the robot. 
+          The ball caster was also a complex part, but I had learned my lesson from the wheel. I focused on the key aspects of the part like the mounting holes and the ball diameter.
+          
+<br><br>
+          By far the most challenging part to model was the wheel. It consists of a hard plastic rim and a rubber tire that fits over the rim. I tried my best to accurately measure each feature, but the wheel was too complex. I decided to focus on the key features that would matter most when interfacing with the rest of the robot. 
+          After finishing the part models, I moved on to the assembly. At this point, it was pretty late. I mated a few parts and decided to call it a day. 
+           
+        </p>
+        <figure>
+          <img src="images/Ball Roller.jpg" class="images" />
+          <figcaption>
+            <i>fig. 2</i>: Ball Roller model in solidworks
+          </figcaption>
+        </figure>
+        <h3>Jessica</h3>
+        <p>
+            Started with the autonomous car code. Used the ultrasonic 
+            sensor to detect distance and make the car turn. During troubleshooting
+            the ultrasonic sensor, I ran into problems if disconnection of pins.I ended up 
+            checking all jumper wires and the bread board. 
+            <span
+            >After an hour or so, I figure the cause of the problem. I didn't press the 
+            Arduino Nano into the breadboard thoroughly. After that trouble, I proceeded
+            to test my code out with only the ultrasonic and some leds. Futhermore,
+            one of my teammates suggested I use the library HTLR04 provided by Harvey
+            from the HAcK trainings.</span
+          ><span
+            >That was great because it cleaned the code. </span
+          >
+         </p> 
+
+         <p>
+          <span
+            >The only problem lefted in the code now is to test the time that it would 
+            take to turn the robot into exactly 90 and 180 degrees. I made this code with the thought
+            of two IR reflective and one ultrasonic. There might be changes that need to 
+            be made because I haven't confirmed if there are two IRs. I ended the day with 
+            finishing the IR reflective code to test if the maze was ending or not.</span
+          >
+        </p> 
+        <h3>Austin</h3>
+        <p>
+          <span
+            >Started the day with creating the prototype build with tapes 
+            and twisted ties. Proceeded to revise and rewrite some of the IR controller
+            coded. He started to create the ultimate Car.ino code, which would have both
+            BT and Joystick on it. The code also has the two sensor codes. </span
+          ><span
+            >He debugged issues in the car code where one motor seemed to not work 
+            *only* when running the car code (as opposed to basic motor test). The 
+            cause was because of Premature servo.attach() in code without physically
+             connecting the servo arm that caused the issue</span
+          >
+        </p> 
+
+        <p>
+          <span
+            >
+            After getting everything debugged, he proceeded to refactor the car code 
+            using the L98NX2 library. He created the bluetooth controller python script code
+            and car code. Since there was delays in when he type the python code to the car
+            actually performing the action, Austin decided to add a BT time-argument feature.
+            Now, you can type the code and add time after for it to run.
+            </span
+          >
+        </p>
+      </div>
+    </section>
+    <section>
+      <div class="content">
+        <h2>Day 2</h2>
+        <p>
+          I mean, who wouldn't like some music?
+        </p>
+        <h3>Brian</h3>
+        <p>
+          After a refreshing 5 hours of sleep filled with nightmares of over constrained solidworks assemblies and under defined sketches, it was time to start day 2. 
+<br><br>
+          I left the assembly alone and started designing a system to release a ball from the robot. It was clear from the kit of parts that the creators of this challenge had a solution in mind. Ignoring this, I strew all my parts over the kitchen table and did my best impression of a child playing with legos.
+          
+<br><br>
+          I took various parts and stuck them together to test different potential mechanisms. Most were pretty bad. 
+          
+<br><br>
+          Finally, I stumbled upon a solution. Placing two angle brackets at a 90 degree angle from each other, I could create a corner that a round object could rest in. This assembly was placed next to a servo with an arm attached. In the closed position, the arm would sit in front of the round object. All it takes to release the ball is to rotate the servo arm by a few degrees, causing the ball to roll out consistently. 
+<br><br>
+<p/>
+<figure>
+  <img src="images/Ball Mechanism.jpeg" class="images" />
+  <figcaption>
+    <i>fig. 3</i>: Ball Mechanism to hold and release a pingpong ball
+  </figcaption>
+</figure>
+          <p>
+          Don’t let the simplicity fool you. This design proved to work very consistently. 
+          
+<br><br>
+          After that, I starting building the full robot. The only other difficulty I ran into was mounting the breadboard. The board was supposed to be mounted to a wooden platform sized to fit the robot frame. However, our ball mechanism and servo placement got in the way, so I had to rotate the board 90 degrees and attach it with screws, leaving half the board hanging off the edge of the bot. 
+          <p/>
+          <figure>
+            <img src="images/Ball Mechanism.jpeg" class="images" />
+            <figcaption>
+              <i>fig. 4</i>: Mount for breadboard
+            </figcaption>
+          </figure>
+          <p> 
+<br><br>
+          Also…I failed to mention, this was after two failed attempts at attaching the board. The first attempt, I stuck the breadboard directly to the robot frame, but forgot to account for the servo arm position. I had to rip the board off, which actually destroyed the board. 
+          
+<br><br>
+          Round two, I decided to design an elaborate mounting system that involved two angle brackets epoxied to my second (and final) breadboard. This also failed, but this time the breadboard survived.  
+          <br><br>
+          <h3>Assembly</h3>
+          <p/>
+          <p>
+          Next, I moved back to CAD to finish the assembly. This process was pretty straight forward—just replicate what I’d just done. Except with CAD, you can’t spend 30 minutes looking for tiny screws dropped in the carpet. The only issue I ran into was mating the electronic components. Unlike the mechanical components, the electrical components lacked exact sizing two mate the items together, so I was forced to simply move them by eye and then fix them in place. 
+          <br>
+          </p>
+          <figure>
+            <img src="images/Robot Assembly Photo.PNG" class="images" />
+            <figcaption>
+              <i>fig. 5</i>: Final Robot Assmebly
+            </figcaption>
+          </figure>
+                    <p>
+        <h3>Jessica</h3>
+        <p>
+          I found out that we only had one IR reflective receiver. 
+          I had to remodel all the code that I wrote earlier to fit the change. Previously
+          I imagine the ultrasonic to be in the middle and the 2 IR to be on either sides,
+           but now I need to have the Ultrasonic on the right side and the IR on the left side.
+        </p>
+        <pre>
+          <code>
+          // Structure of code changed to the following
+          if (both side < 4cm ) {
+            Move forward; 
+          }
+           If ( left > 4 ) {
+            Turn left + move forward a bit; 
+          }
+          if( right > 4 ) {
+            Turn right + move forward a bit; 
+          }
+          if ( both > 4 ) {
+            Stop + unload; 
+          }
+            </code>
+          </pre>
+          <p>
+           I also made the Engineering drawings for the Wheels, caster balls, and L Mounting
+           Brackets. The only debugging issue when I was drawing was that I couldn't have
+           the right side of the view auto defined dimensions. However, I figure that out by 
+           checking "include items from hidden features." I also made the assembly drawings and 
+            exploded view from the assembly. It is so satisfying to watch the animation. I am
+            so proud of what our team has accomplished. ^^
+          </p>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/WXGuOc9nXJs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <h3>Austin</h3>
+          <p>
+            Debugged bluetooth time-argument features to make it work. The BT needed 
+            the callback function to reset motors. The Signal handlers needed to be outside of the 
+            serial.available() conditional due to the way the motor “For” methods work. 
+            He added the second IR receiver on the car code to enhance reception. The debugging issues
+            for hardware was mainly because of wires that weren't connected to the right pin of the IR.
+          </p>
+          <p> 
+            Coding issues: Both receivers share the same conditionals using a bunch of logical ORs 
+            caused issues. This Caused any signal picked up by first receiver to be unintendedly 
+            repeated upon the push of *any* joystick direction. 
+            We can only do digitalwrite. When IRreceiver.resume() is called, irReceiver.decodedIRData.address does not clear out.
+            The IR feature code was finished after this.
+          </p>
+          <p>
+            After the feature, Austin started to debugg the IR controller code. The problem was 
+            Faulty logic in code which caused unpredictable jitter. This often resulted in 
+            sending a ‘right’ signal when it should have sent ‘down’ The IR controller code was finished afterward.
+          </p>
+          <p>
+            He later proceeded to Hooked up car’s breadboard circuitry & optimized pin numbers for each io component.
+            He troubleshooted the car's breadboard circuitry and accidentally Reversed Vcc & OUT on both ir receivers, 
+            which caused some smoke and a tiny mental breakdown from Austin. But Hey, We were 
+            super lucky. Turns out, we only burned the breadboard, so the components and the Nano board works
+            just fine. THIS IS A MIRACLE!
+          </p>
+          <P>
+            After all the hard work, Austin finally had an assembled car that looks similar to the final version.
+            However, one motor was not working when he uploaded the code. But it was a long day and he needs to sleep.
+          </P>
+      </div>
+    </section>
+    <section id="Day3">
+      <div class="content">
+        <h2>Day 3</h2>
+        <h3>Brian</h3>
+        <p>
+          Day 3, I focused on FEA and <em>this</em> website. I hadn’t done much FEA (finite element analysis) before this, so it was an interesting challenge. The goal was to create studies that analyzed two different parts under some force. This study would be used to create a report summarizing the results. 
+<br><br>
+The hardest part of this was trying to accurately model real world conditions for these parts. I had to make a lot of assumptions about how the parts would be used and the forces they’d experience. I was able to generate the reports without too much trouble. 
+
+<br><br>
+Next, I got to work on the website you’re reading right now. I started by picking a color theme from a color palette website. Then, I found some cool fonts on Google fonts. Google fonts makes it easy for you into import	a ton of great looking to your website—for free! [This blog post was brought to you by Google—I wish, Google please sponsor me]
+
+<br><br>
+After that, I found this cool tool that lets you generate backgrounds for your website using the colors you provide. 
+
+<br><br>
+Then, it was just a bunch of CSS, messing around with components until everything looked okay. The “our team” section was the hardest. I used something called “flex box” which helps to align content. 
+
+<br><br>
+Once I’d gotten the basic layout of the website done, I decided to add a cool feature, just for fun. It’s that button at the bottom of the website, “Joke Generator”. 
+
+<br><br>
+<h3>The making of the joke generator</h3>
+<p>
+I Googled simple API’s (stands for application public interface) that I could use to add some extra functionality of the site, and stumbled upon a joke API. Who doesn’t like a joke? So I decided to implement a joke generator feature. 
+
+<br><br>
+Starting off, I used jQwery, which allows me to make an HTTP get request to the API endpoint. 
+
+<br><br>
+Then, in the callback function I update the value of the HTML element with the joke text. I also scroll the page so that the joke and button stay in view regardless of the size of the joke. 
+
+<br><br>
+Next, I spiced things up by adding an animation step. I borrowed code from the internet and edited it a bit in order to make a cool typing animation, so it looks like someone is sending the joke to you live. 
+
+<br><br>
+Then, it was a matter of fine tuning the styling, before calling it a day. 
+          
+<br><br>
+</p>
+
+        <pre>
+<code>
+int main() 
+{ 
+    for (int i = 0; i < 3; i++) { 
+        std::cout << "Hello world" << std::endl; 
+    } 
+}
+  </code>
+</pre>
+        <h3>Jessica</h3>
+        <p>
+          Writing the website now. 2 hours and 6 mins until HAcK ends. Austin is taking the Videos of all the tiers.
+          Brian is finishing the FEA report. After I am done with writing the website, I will start to work with Austin on the 
+          autonomous dumper truck code. 
+        </p>
+        <h3>Austin</h3>
+        <p>
+          He debugged the issue from last time when the right motor didin't work. The problem was cause by 
+          the libraries used. Some libraries use timer on pins so we can't use analogwrite for our motors.
+          We shifted the pins which caused the right motor’s enable pin to take up timer2 slot (D11). 
+          Similar problem occured while using IRremote library, analogwrite() to timer2 is nullified.
+          Thus, we decided to shift pins again to account for this. Since we are using all digital pins on nano, 
+          we chose to hook up the led to D11 since it only requires *digital* output
+        </p>
+        <p>
+          After fixing the motors, we went on to debugg the issue where servo wouldn't work in the 
+          test sweep code. We also opt to use a lipo battery for power instead of the Nano's 5V.
+          Next, we added the servo code to the IR controller and car code. Austin debugged the servo 
+          code because while using the servo library analog output to timer1 (D9 & D10) is nullified.
+          Problem solved by switching right motor’s enable pin to pin 6 and  
+          shifting the rest of the motor pins accordingly
+        </p>
+      </div>
+    </section>
+    <section>
+      <div class="content">
+          <h2 style="text-align: center;"><u>Joke Generator</u></h2>
+          <div id="jokeText" style="text-align: left; background-color: rgba(0,0,0,.2); margin-bottom:30px; margin-top:10px; border-radius: 10px;">
+            <!-- <h3 id="joke_setup"></h3>
+            <h3 id="joke_punchline"></h3> -->
+            <div id="typedtext"></div> 
+          </div>
+        
+          <button class="button1" id="jokeBtn">Generate a Joke</button>
+        </div>
+      
+    </section>
+    <body>
+      <div id="typedtext"></div>
+    </body>
+    
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
+</html>
